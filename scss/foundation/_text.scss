@@ -1,0 +1,8 @@
+$index:0;
+
+@each $size in $sizes {
+    $index : $index+1;
+    .is-size-#{$index}{
+        font-size: $size;
+    }
+}
