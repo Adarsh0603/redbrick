@@ -1,8 +1,27 @@
+@use "sass:math";
 $index:0;
 
 @each $size in $sizes {
     $index : $index+1;
-    .is-size-#{$index}{
+    .ts-#{$index}{
         font-size: $size;
+    }
+}
+$index:0;
+@each $weight in $weights {
+    $index: $index+1;
+    .wt-#{$index}{
+        font-weight: $weight;
+    }
+    
+}
+$index:0;
+
+@include mobile{
+    @each $size in $sizes {
+        $index : $index+1;
+        .ts-#{$index}-m{
+            font-size: math.div($size,2);
+        }
     }
 }
