@@ -1,27 +1,65 @@
 @use "sass:math";
-$index:0;
 
 @each $size in $sizes {
-    $index : $index+1;
-    .ts-#{$index}{
-        font-size: $size;
+  $index: index($sizes, $size);
+  .ts-#{$index} {
+    font-size: $size;
+    @include laptop {
+      font-size: math.div($size, 1.25);
     }
-}
-$index:0;
-@each $weight in $weights {
-    $index: $index+1;
-    .wt-#{$index}{
-        font-weight: $weight;
+    @include tablet {
+      font-size: math.div($size, 1.5);
     }
-    
+    @include mobile {
+      font-size: math.div($size, 2);
+    }
+  }
 }
-$index:0;
 
-@include mobile{
-    @each $size in $sizes {
-        $index : $index+1;
-        .ts-#{$index}-m{
-            font-size: math.div($size,2);
+@each $weight in $weights {
+  $index: index($weights, $weight);
+
+  .wt-#{$index} {
+    font-weight: $weight;
+  }
+}
+
+$text-alignments: center left right justify;
+
+@each $alignment in $text-alignments{
+    .ta-#{$alignment}{
+        text-align: $alignment;
+    }
+
+    @include laptop{
+        .ta-#{$alignment}-l{
+            text-align: $alignment;
         }
     }
+    @include tablet{
+        .ta-#{$alignment}-t{
+            text-align: $alignment;
+        }
+    }
+    @include mobile{
+        .ta-#{$alignment}-m{
+            text-align: $alignment;
+        }
+    }
+}
+
+
+.t-capital{
+  text-transform: capitalize ;
+}
+
+.t-lower{
+  text-transform: lowercase ;
+}
+.t-upper{
+  text-transform: uppercase ;
+}
+
+.t-italic{
+  font-style: italic;
 }
