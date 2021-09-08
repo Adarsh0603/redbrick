@@ -1,0 +1,5 @@
+@use "sass:string";
+
+@function colorname($color){
+    @return string.slice($color, 9);
+}

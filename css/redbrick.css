@@ -13,6 +13,46 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
 }
 
+.tc-primary {
+  color: var(--color-primary);
+}
+
+.tc-secondary {
+  color: var(--color-secondary);
+}
+
+.tc-success {
+  color: var(--color-success);
+}
+
+.tc-danger {
+  color: var(--color-danger);
+}
+
+.tc-warning {
+  color: var(--color-warning);
+}
+
+.tc-info {
+  color: var(--color-info);
+}
+
+.tc-light {
+  color: var(--color-light);
+}
+
+.tc-dark {
+  color: var(--color-dark);
+}
+
+.tc-white {
+  color: var(--color-white);
+}
+
+.tc-disabled {
+  color: var(--color-disabled);
+}
+
 .ts-1 {
   font-size: 0.75rem;
 }

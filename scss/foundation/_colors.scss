@@ -1,0 +1,6 @@
+@each $color in $colors{
+    $color-code: colorname($color);
+    .tc-#{$color-code}{
+        color: var($color);
+    }
+}
