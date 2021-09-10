@@ -3,4 +3,8 @@
     .tc-#{$color-code}{
         color: var($color);
     }
+
+    .bg-#{$color-code}{
+        background-color: var($color);
+    }
 }

@@ -3,3 +3,7 @@
 @function colorname($color){
     @return string.slice($color, 9);
 }
+
+@function percentEliminate($percent, $limit){
+    @return string.unquote(string.slice($percent, 1, $limit));
+}

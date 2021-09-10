@@ -1,4 +1,7 @@
 :root{
+
+    /* colors */
+
     --color-primary:#007bff;
     --color-secondary:#6c757d;
     --color-success:#28a745;
@@ -9,4 +12,24 @@
     --color-dark:#343a40;
     --color-white:#fff;
     --color-disabled:#6c757d;
+
+    /* text size */
+
+    --size-1: 0.75rem;
+    --size-2: 1.25rem;
+    --size-3: 1.75rem;
+    --size-4: 2.25rem;
+    --size-5: 2.75rem;
+    --size-6: 3.25rem;
+
+    /* spacing */
+
+    --pdmr-0: 0rem;
+    --pdmr-1: 0.25rem;
+    --pdmr-2: 0.75rem;
+    --pdmr-3: 1.5rem;
+    --pdmr-4: 2rem;
+    --pdmr-5: 2.75rem;
+    --pdmr-6: 3.25rem;
 }
+

@@ -1,0 +1,28 @@
+.fl-row{
+    display: flex;
+    gap: 10px;
+}
+
+.fl-col{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.fl-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$alignments: (center: center, between: space-between, around: space-around, evenly: space-evenly, end: flex-end, start: flex-start);
+
+@each $tag,$align in $alignments{
+    .fl-justify-#{$tag}{
+        justify-content: $align;
+    }
+
+    .fl-align-#{$tag}{
+        align-items: $align;
+    }
+}
