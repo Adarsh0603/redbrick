@@ -1,0 +1,18 @@
+$corners:(tl:top-left,tr:top-right,bl:bottom-left,br:bottom-right);
+
+@each $radius in $borderRadius{
+    $index:index($borderRadius,$radius);
+    .br-#{$index}{
+        border-radius:var($radius);
+    }
+    @each $tag,$corner in $corners{
+        .br-#{$tag}-#{$index}{
+            border-#{$corner}-radius:var($radius);
+        }
+    }
+
+}
+.br-circle{
+    border-radius:9999px;
+}
+

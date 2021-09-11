@@ -1,0 +1,66 @@
+$axes: x y;
+$directions: (
+  l: left,
+  r: right,
+  t: top,
+  b: bottom,
+);
+
+@each $spacing in $spacings {
+  $index: index(
+      $list: $spacings,
+      $value: $spacing,
+    )-1;
+  .mr-#{$index} {
+    margin: var($spacing);
+  }
+
+  .pd-#{$index} {
+    padding: var($spacing);
+  }
+
+  @each $axis in $axes {
+    @if $axis == x {
+      .pdx-#{$index} {
+        padding: 0rem var($spacing);
+      }
+
+      .mrx-#{$index} {
+        margin: 0rem var($spacing);
+      }
+    }
+
+    @if $axis == y {
+      .pdy-#{$index} {
+        padding: var($spacing) 0rem;
+      }
+
+      .mry-#{$index} {
+        margin: var($spacing) 0rem;
+      }
+    }
+  }
+
+  @each $tag, $direction in $directions {
+    .pd#{$tag}-#{$index} {
+      padding-#{$direction}: var($spacing);
+    }
+
+    .mr#{$tag}-#{$index} {
+      margin-#{$direction}: var($spacing);
+    }
+  }
+}
+
+.w-full {
+  width: 100%;
+}
+.w-screen {
+  width: 100vw;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vw;
+}

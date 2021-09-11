@@ -1,0 +1,6 @@
+@each $shadow in $shadows{
+    $index:index($shadows ,$shadow);
+    .sh-#{$index}{
+        box-shadow:var($shadow);
+    }
+}

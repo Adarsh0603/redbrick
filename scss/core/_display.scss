@@ -1,0 +1,44 @@
+.hidden{
+    display: none;
+}
+.d-inline{
+    display: inline;
+}
+.d-block{
+    display: block;
+}
+
+@include laptop{
+    .hidden-l{
+        display: none;
+    }
+    .d-inline-l{
+        display: inline;
+    }
+    .d-block-l{
+        display: block;
+    }
+
+}
+@include tablet{
+    .hidden-t{
+        display: none;
+    }
+    .d-inline-t{
+        display: inline;
+    }
+    .d-block-t{
+        display: block;
+    }
+}
+@include mobile{
+    .hidden-m{
+        display: none;
+    }
+    .d-inline-m{
+        display: inline;
+    }
+    .d-block-m{
+        display: block;
+    }
+}
