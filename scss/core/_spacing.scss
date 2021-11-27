@@ -51,7 +51,15 @@ $directions: (
     }
   }
 }
-
+@each $width in $widths {
+  $index: index(
+    $list: $widths,
+    $value: $width,
+  );
+  .w-#{$index} {
+    width: var($width);
+  }
+}
 .w-full {
   width: 100%;
 }

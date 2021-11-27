@@ -1,5 +1,5 @@
 // TEXT
-$global-font:'Roboto', sans-serif;
+$global-font: "Roboto", sans-serif;
 
 // $size-1: 0.75rem;
 // $size-2: 1.25rem;
@@ -8,13 +8,14 @@ $global-font:'Roboto', sans-serif;
 // $size-5: 2.75rem;
 // $size-6: 3.25rem;
 
-$weights: 200 400  600  800 ;
+$weights: 200 400 600 800;
 
 $sizes: --size-1 --size-2 --size-3 --size-4 --size-5 --size-6;
+$widths: --wd-1 --wd-2 --wd-3 --wd-4 --wd-5 --wd-6;
 
-$colors: --color-primary --color-secondary --color-link --color-success --color-danger
-  --color-warning --color-info --color-light --color-dark --color-white
-  --color-disabled;
+$colors: --color-primary --color-secondary --color-link --color-success
+  --color-danger --color-warning --color-info --color-light --color-dark
+  --color-white --color-disabled;
 
 $spacings: --pdmr-0 --pdmr-1 --pdmr-2 --pdmr-3 --pdmr-4 --pdmr-5 --pdmr-6;
 

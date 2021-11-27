@@ -415,6 +415,30 @@ ul {
   margin-bottom: var(--pdmr-6);
 }
 
+.w-1 {
+  width: var(--wd-1);
+}
+
+.w-2 {
+  width: var(--wd-2);
+}
+
+.w-3 {
+  width: var(--wd-3);
+}
+
+.w-4 {
+  width: var(--wd-4);
+}
+
+.w-5 {
+  width: var(--wd-5);
+}
+
+.w-6 {
+  width: var(--wd-6);
+}
+
 .w-full {
   width: 100%;
 }
@@ -1003,4 +1027,114 @@ ul {
 
 .sh-6 {
   box-shadow: var(--shadow-6);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-ol-primary {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-ol-secondary {
+  background-color: transparent;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.btn-ol-link {
+  background-color: transparent;
+  border: 1px solid var(--color-link);
+  color: var(--color-link);
+}
+
+.btn-ol-success {
+  background-color: transparent;
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+}
+
+.btn-ol-danger {
+  background-color: transparent;
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+}
+
+.btn-ol-warning {
+  background-color: transparent;
+  border: 1px solid var(--color-warning);
+  color: var(--color-warning);
+}
+
+.btn-ol-info {
+  background-color: transparent;
+  border: 1px solid var(--color-info);
+  color: var(--color-info);
+}
+
+.btn-ol-light {
+  background-color: transparent;
+  border: 1px solid var(--color-light);
+  color: var(--color-light);
+}
+
+.btn-ol-dark {
+  background-color: transparent;
+  border: 1px solid var(--color-dark);
+  color: var(--color-dark);
+}
+
+.btn-ol-white {
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.btn-ol-disabled {
+  background-color: transparent;
+  border: 1px solid var(--color-disabled);
+  color: var(--color-disabled);
+}
+
+.card {
+  padding: 1rem 1rem;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: inline-block;
+}
+
+.modal-bg {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.568);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 1rem 1rem;
+  margin: 1rem;
+  max-width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: inline-block;
+}
+
+.close {
+  position: absolute;
+  width: 40px;
+  top: -25px;
+  right: -25px;
 }

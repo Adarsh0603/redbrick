@@ -1,0 +1,14 @@
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@each $color in $colors {
+  $color-code: colorname($color);
+  .btn-ol-#{$color-code} {
+    background-color: transparent;
+    border: 1px solid var($color);
+    color: var($color);
+  }
+}
