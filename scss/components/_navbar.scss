@@ -1,0 +1,91 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-item {
+  font-weight: bold;
+  padding: 0.3rem 1rem;
+  border-radius: 10px;
+
+  text-transform: uppercase;
+}
+.is-nav-active {
+  background-color: rgba(211, 211, 211, 0.178);
+}
+.nav-item:hover {
+  background-color: rgba(211, 211, 211, 0.178);
+}
+.nav-items a {
+  color: inherit;
+}
+
+#logo {
+  width: 240px;
+  height: 50px;
+  object-fit: contain;
+}
+.burger {
+  display: none;
+
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width: 720px) {
+  .nav-items {
+    display: none;
+  }
+
+  .nav-open {
+    padding: 1rem;
+    position: absolute;
+    background-color: inherit;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .nav-open a {
+    padding: 0.4rem 1rem;
+  }
+
+  .burger {
+    display: inline-block;
+  }
+}
