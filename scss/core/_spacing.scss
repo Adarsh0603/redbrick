@@ -11,42 +11,42 @@ $directions: (
       $list: $spacings,
       $value: $spacing,
     )-1;
-  .mr-#{$index} {
+  .m-#{$index} {
     margin: var($spacing);
   }
 
-  .pd-#{$index} {
+  .p-#{$index} {
     padding: var($spacing);
   }
 
   @each $axis in $axes {
     @if $axis == x {
-      .pdx-#{$index} {
+      .px-#{$index} {
         padding: 0rem var($spacing);
       }
 
-      .mrx-#{$index} {
+      .mx-#{$index} {
         margin: 0rem var($spacing);
       }
     }
 
     @if $axis == y {
-      .pdy-#{$index} {
+      .py-#{$index} {
         padding: var($spacing) 0rem;
       }
 
-      .mry-#{$index} {
+      .my-#{$index} {
         margin: var($spacing) 0rem;
       }
     }
   }
 
   @each $tag, $direction in $directions {
-    .pd#{$tag}-#{$index} {
+    .p#{$tag}-#{$index} {
       padding-#{$direction}: var($spacing);
     }
 
-    .mr#{$tag}-#{$index} {
+    .m#{$tag}-#{$index} {
       margin-#{$direction}: var($spacing);
     }
   }
