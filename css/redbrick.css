@@ -186,6 +186,11 @@ input::-webkit-inner-spin-button {
   color: inherit;
 }
 
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+
 #logo {
   width: 240px;
   height: 50px;
