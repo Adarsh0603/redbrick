@@ -59,6 +59,22 @@ $directions: (
   .w-#{$index} {
     width: var($width);
   }
+  @include laptop {
+    .w-#{$index}-l {
+      width: var($width);
+    }
+  }
+  @include tablet {
+    .w-#{$index}-t {
+      width: var($width);
+    }
+  }
+
+  @include mobile {
+    .w-#{$index}-m {
+      width: var($width);
+    }
+  }
 }
 .w-full {
   width: 100%;
@@ -71,4 +87,48 @@ $directions: (
 }
 .h-screen {
   height: 100vh;
+}
+
+@include laptop {
+  .w-full-l {
+    width: 100%;
+  }
+  .w-screen-l {
+    width: 100vh;
+  }
+  .h-screen-l {
+    height: 100vh;
+  }
+  .h-full-l {
+    height: 100%;
+  }
+}
+@include tablet {
+  .w-full-t {
+    width: 100%;
+  }
+  .w-screen-t {
+    width: 100vh;
+  }
+  .h-screen-t {
+    height: 100vh;
+  }
+  .h-full-t {
+    height: 100%;
+  }
+}
+
+@include mobile {
+  .w-full-m {
+    width: 100%;
+  }
+  .w-screen-m {
+    width: 100vh;
+  }
+  .h-screen-m {
+    height: 100vh;
+  }
+  .h-full-m {
+    height: 100%;
+  }
 }

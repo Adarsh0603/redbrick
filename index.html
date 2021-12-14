@@ -9,108 +9,60 @@
     <link rel="stylesheet" href="./css/redbrick.css">
 </head>
 
-<body>
-    <!-- <nav class="navbar bg-link">
-
-        <div class="nav-items tc-white">
-            <a class="nav-item " href="#">
-                Home
-            </a>
-            <a class="nav-item href=" #">
-                About
-            </a><a class="nav-item" href="#">
-                Contact
-            </a>
-        </div>
-
-        <div class="burger" onclick="openNav()">
-            <div class="bar1 bg-white"></div>
-            <div class="bar2 bg-white"></div>
-            <div class="bar3 bg-white"></div>
-        </div>
-
-        <div class="logo">
-            <img id="logo" src="https://i.ibb.co/BfM4BqD/redbricklogo.png" alt="redbricklogo">
-        </div>
-
-    </nav>
-
-    <button class="open-modal btn btn-ol-black">open</button> -->
+<body class="bg-danger">
 
 
-    <div class="modal-bg is-active">
-        <div class="modal-content ">
-            <div class="close ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#D9D9DB">
-                    <path fill-rule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-                        clip-rule="evenodd" />
-                </svg>
+    <form class="w-3 p-3 card bg-white w-screen-t">
+        <div class="fl-row fl-col-t">
+            <div>
+                <label for="name">First Name</label>
+                <input type="text" id="name" class="input sh-1" placeholder="First Name">
+
             </div>
-            <p class="ts-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quidem a, sunt porro, autem
-                libero atque
-                nobis facilis temporibus assumenda dolores eos quaerat accusantium ea minus. Harum at delectus autem?
-                Reprehenderit, temporibus natus obcaecati unde eum officia architecto aliquam eveniet commodi qui,
-                officiis eos consectetur repellat ipsam nisi repudiandae deleniti?</p>
+            <div> <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="input sh-1" placeholder="Last Name">
+            </div>
         </div>
-    </div>
+        <div class="fl-row">
 
-    <!-- <h1 class="ts-1 tc-success ">Heading 1</h1>
-    <h1 class="ts-2 bg-dark tc-light tw-4">Heading 1</h1>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" class="input sh-1" placeholder="Age">
+            </div>
+            <div class="w-full">
+                <label for="gender">Gender</label>
+                <select class="input sh-1" name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
 
-    <h1 class="ts-3">Heading 1</h1>
-    <h1 class="ts-4 tc-primary">Heading 1</h1>
-    <h1 class="ts-5 ta-left-m hidden ta-center bg-dark tc-light pdt-4 mrl-6 mrr-6 pdb-4 br-circle >Heading 1</h1>
-    <h1 class=" ts-6 ">Heading 1</h1>
-
-    <br>
-    <a href=" #">Adarsh</a>
-        <br>
-        <br>
-        <h1 class="d-inline">Click here to </h1>
-        <a href="#" class="d-inline tc-link">Learn More</a>
-        <ul>
-            <li>a</li>
-            <li>a</li>
-            <li>a</li>
-        </ul>
-        <p class="ta-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusantium officia
-            debitis
-            eius vitae, suscipit fugiat incidunt, hic doloremque soluta, dignissimos possimus rem necessitatibus
-            asperiores
-            porro dolorem quos labore. Maxime enim itaque asperiores, tenetur quo nulla rem illum explicabo! Doloremque
-            nostrum maiores ipsa officiis quidem, repudiandae alias assumenda sit omnis?</p> -->
-    <!-- 
-    <div class="fl-row fl-justify-center fl-align-center" style="width: 50%;">
-        <div style="height: 100px; width: 100px; background-color: gray;">A</div>
-        <div class="fl-col mr-3">
-            <div class="fl-center mr-30 sh-1 br-circle" style="height: 100px; width: 100px; background-color: white;">A</div>
-            <div style="height: 100px; width: 100px; background-color: gray;" class="br-3">B</div>
-            <div style="height: 100px; width: 100px; background-color: gray;" class="br-6">C</div>
+            </div>
         </div>
-        <div style="height: 100px; width: 100px; background-color: gray; " class="br-tl-6">C</div>
-    </div> -->
-    <div class="mr-6">
-        <p class="ts-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ab mollitia rem eius accusamus
-            pariatur
-            repellat architecto totam consequuntur numquam ex libero earum iusto debitis sint perspiciatis eos est
-            ratione?</p>
-        <button class="btn btn-ol-danger br-4">Adarsh</button>
-        <div class="bg-primary "></div>
-    </div>
-    <div class="card br-2 bg-white tc-light">
-        <form>
-            <label class="tc-dark bg-danger pd-1 mr-1">name:</label><input type="text"
-                class="input br-3 bg-secondary tc-light pd-2">
-            <input type="number" class="input">
-            <select class="input">
-                <option class="select-option">Select dropdown</option>
-                <option class="select-option">With options</option>
-            </select>
-            <textarea class="input" name="" id="" cols="30" rows="10"></textarea>
 
-        </form>
-    </div>
+        <label for="email">Email</label>
+        <input type="email" id="email" class="input sh-1" placeholder="Email">
+        <label for="phone">Phone</label>
+        <input type="number" id="phone" class="input sh-1" placeholder="Phone No.">
+
+        <label for="desc">Description</label>
+        <textarea id="desc" class="input sh-1" rows="3" placeholder="More about you.."></textarea>
+
+        <input type="checkbox" id="accept" name="accept">
+        <label for="accept"> I accept the <a href="#" class="tc-link">Terms and
+                Conditions.</a></label><br>
+        <br>
+        <div>
+            <button class="btn bg-danger tc-white br-2 w-full" type="submit">Create Account</button>
+        </div>
+
+        <div class="ta-center mt-2 ts-1">
+            <p>Already have an account?
+                <a href="#" class=" ta-right tc-link ts-1 tw-2">Log In</a>
+
+            </p>
+        </div>
+    </form>
 
 
 

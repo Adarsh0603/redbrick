@@ -1,28 +1,102 @@
-.fl-row{
-    display: flex;
-    gap: 10px;
+.fl-row {
+  display: flex;
+  gap: 10px;
 }
 
-.fl-col{
+.fl-col {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.fl-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$alignments: (
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+  end: flex-end,
+  start: flex-start,
+);
+
+@each $tag, $align in $alignments {
+  .fl-justify-#{$tag} {
+    justify-content: $align;
+  }
+
+  .fl-align-#{$tag} {
+    align-items: $align;
+  }
+  @include laptop {
+    .fl-align-#{$tag}-l {
+      align-items: $align;
+    }
+  }
+  @include tablet {
+    .fl-align-#{$tag}-t {
+      align-items: $align;
+    }
+  }
+  @include mobile {
+    .fl-align-#{$tag}-m {
+      align-items: $align;
+    }
+  }
+}
+@include laptop {
+  .fl-row-l {
+    display: flex;
+    gap: 10px;
+  }
+
+  .fl-col-l {
     display: flex;
     gap: 10px;
     flex-direction: column;
-}
-
-.fl-center{
+  }
+  .fl-center-l {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@include tablet {
+  .fl-row-t {
+    display: flex;
+    gap: 10px;
+  }
+
+  .fl-col-t {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .fl-center-t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-$alignments: (center: center, between: space-between, around: space-around, evenly: space-evenly, end: flex-end, start: flex-start);
+@include mobile {
+  .fl-row-m {
+    display: flex;
+    gap: 10px;
+  }
 
-@each $tag,$align in $alignments{
-    .fl-justify-#{$tag}{
-        justify-content: $align;
-    }
-
-    .fl-align-#{$tag}{
-        align-items: $align;
-    }
+  .fl-col-m {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .fl-center-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
